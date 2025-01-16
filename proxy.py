@@ -8,13 +8,10 @@ import threading
 
 
 # 端口映射配置信息
-CFG_REMOTE_IP = '127.0.0.1'
-CFG_REMOTE_PORT = 22
-# CFG_REMOTE_IP = sys.argv[1]
-# CFG_REMOTE_PORT = int(sys.argv[2])
+CFG_REMOTE_IP = sys.argv[1]
+CFG_REMOTE_PORT = int(sys.argv[2])
 CFG_LOCAL_IP = '0.0.0.0'
-CFG_LOCAL_PORT = 80
-# CFG_LOCAL_PORT = int(sys.argv[3])
+CFG_LOCAL_PORT = int(sys.argv[3])
 
 # 接收数据缓存大小
 PKT_BUFF_SIZE = 2048
