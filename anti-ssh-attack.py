@@ -67,6 +67,7 @@ def tcp_mapping_request(local_conn):
 def tcp_mapping(local_ip, local_port):
     local_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     local_server.bind((local_ip, local_port))
+    local_server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     local_server.listen(5)
     logger.debug(f'Starting mapping service on {local_ip}:{local_port} ...')
 
