@@ -125,11 +125,11 @@ class ProxyController:
     # def start_proxy(self,a,b,c):
     #     """启动代理具体实现"""
     #     # 此处添加启动代理的代码（如调用系统命令）
-    #     print("代理已启动")  # 调试输出 ==&zwnj;**‌:ml-citation{ref="3,6" data="citationList"}**&zwnj;==
+    #     print("代理已启动")
     #     self.log.insert(tk.END, f"代理已启动\n")
 
     def start_proxy(self, remote_ip, remote_port, local_port):
-        print("代理尝试启动")  # 调试输出 ==&zwnj;**‌:ml-citation{ref="3,6" data="citationList"}**&zwnj;==
+        print("代理尝试启动")
         try:
             cmd = [
                 "proxy.exe",
@@ -160,10 +160,10 @@ class ProxyController:
     # def stop_proxy(self):
     #     """停止代理具体实现"""
     #     # 此处添加停止代理的代码（如终止进程）
-    #     print("代理已停止")  # 调试输出 ==&zwnj;**‌:ml-citation{ref="3,6" data="citationList"}**&zwnj;==
+    #     print("代理已停止")
 
     def stop_proxy(self):
-        print("代理尝试停止")  # 调试输出 ==&zwnj;**‌:ml-citation{ref="3,6" data="citationList"}**&zwnj;==
+        print("代理尝试停止")
         if self.proxy_process:
             # 终止进程树
             kill_proc_tree(self.proxy_process.pid)
