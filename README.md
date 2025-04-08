@@ -6,4 +6,5 @@ pip install pystray psutil pillow nuitka
 
 代码编译
 nuitka --standalone --onefile  --show-memory --disable-ccache  .\proxy.py   
-nuitka --standalone --onefile --enable-plugin=tk-inter --include-module=psutil --enable-plugin=multiprocessing --disable-console --show-memory --disable-ccache  .\ui.py
+nuitka --standalone --onefile --enable-plugin=tk-inter --include-module=psutil --enable-plugin=multiprocessing --disable-console --show-memory --windows-icon-from-ico=temp_icon.ico --disable-ccach
+e .\ui.py
